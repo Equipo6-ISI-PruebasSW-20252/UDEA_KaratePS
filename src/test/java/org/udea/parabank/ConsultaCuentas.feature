@@ -6,22 +6,22 @@ Feature: List all accounts of a user
     * header Accept = 'application/json'
     * def user_id = '12212'
 
-  Scenario: Succesful List of Accounts customers/12212/accounts
+  Scenario: Succesful List of Accounts
     Given path 'customer'
     And path user_id
     And path 'accounts'
     When method GET
     Then status 200
     And match response ==
-  {
-    accounts: '#[0]',
-  }
-  And match each response.accounts ==
-  {
-    id: '#number',
-    customerId: '#number',
-    type: '#string',
-    balance: '#string'
-  }
+    {
+      accounts: '#[0]',
+    }
+    And match each response.accounts ==
+    {
+      id: '#number',
+      customerId: '#number',
+      type: '#string',
+      balance: '#string'
+    }
 
 
