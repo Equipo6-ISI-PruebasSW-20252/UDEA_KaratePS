@@ -18,4 +18,11 @@ class TestRunner {
                 .outputCucumberJson(true);
     }
 
+        @Karate.Test
+    Karate test03_ParabankListAccounts() {
+        return Karate.run("ConsultaCuentas")
+                .relativeTo(getClass())
+                .outputCucumberJson(true);
+    }
+
 }
