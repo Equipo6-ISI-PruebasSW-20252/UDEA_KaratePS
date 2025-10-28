@@ -7,7 +7,7 @@ Feature: List all accounts of a user
     * def user_id = '12212'
 
   Scenario: Succesful List of Accounts
-    Given path 'customer'
+    Given path 'customers'
     And path user_id
     And path 'accounts'
     When method GET
