@@ -12,6 +12,12 @@ Feature: List all accounts of a user
     And path 'accounts'
     When method GET
     Then status 200
+    And match response.accounts ==
+    """
+    {
+      "accounts": '#string:map'
+    }
+    """
     And match each response.accounts ==
     """
     {
