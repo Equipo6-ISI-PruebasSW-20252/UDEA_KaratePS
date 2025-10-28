@@ -13,15 +13,19 @@ Feature: List all accounts of a user
     When method GET
     Then status 200
     And match response ==
+    """
     {
-      accounts: '#[0]',
+      "accounts": '#[0]',
     }
+    """
     And match each response.accounts ==
+    """
     {
-      id: '#number',
-      customerId: '#number',
-      type: '#string',
-      balance: '#string'
+      "id": '#number',
+      "customerId": '#number',
+      "type": '#string',
+      "balance": '#string'
     }
+    """
 
 
