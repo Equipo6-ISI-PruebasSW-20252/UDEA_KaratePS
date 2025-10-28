@@ -12,10 +12,10 @@ Feature: List all accounts of a user
     And path 'accounts'
     When method GET
     Then status 200
-    And match response ==
+    And match response.accounts ==
     """
     {
-      "accounts": '#map',
+      "accounts": '#[0]',
     }
     """
     And match each response.accounts ==
@@ -24,7 +24,7 @@ Feature: List all accounts of a user
       "id": '#number',
       "customerId": '#number',
       "type": '#string',
-      "balance": '#string'
+      "balance": '#number'
     }
     """
 
