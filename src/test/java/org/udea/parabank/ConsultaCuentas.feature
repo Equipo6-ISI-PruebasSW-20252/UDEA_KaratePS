@@ -15,7 +15,7 @@ Feature: List all accounts of a user
     And match response ==
     """
     {
-      "accounts": '#[0]',
+      "accounts": '#map',
     }
     """
     And match each response.accounts ==
