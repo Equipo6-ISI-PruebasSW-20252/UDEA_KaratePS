@@ -25,7 +25,7 @@ Feature: List all accounts of a user
     """
   Scenario: Non existent user
     Given path 'customers'
-    And path reandom_user_id
+    And path random_user_id
     And path 'accounts'
     When method GET
     Then status 400
