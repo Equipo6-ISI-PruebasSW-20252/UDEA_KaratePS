@@ -29,7 +29,6 @@ Feature: Login to Parabank
     """
 
 # Validar que el header CF-RAY exista y no sea nulo (Criterio de aceptación #3)
-    And match responseHeaders contains key 'CF-RAY'
-    And match responseHeaders['CF-RAY'][0] != null
-
-    * print 'Login successful. CF-RAY header:', responseHeaders['CF-RAY'][0]
+* def cfRay = responseHeaders['CF-RAY'][0]
+    And match cfRay != null
+    * print 'Login successful. CF-RAY header:', cfRay
