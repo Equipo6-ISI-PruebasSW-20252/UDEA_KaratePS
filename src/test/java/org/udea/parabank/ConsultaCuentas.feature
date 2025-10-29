@@ -5,6 +5,7 @@ Feature: List all accounts of a user
     * url baseUrl
     * header Accept = 'application/json'
     * def user_id = '12212'
+    * def random_user_id = fakerObj.number().randomNumber(5, true)
 
   Scenario: Succesful List of Accounts
     Given path 'customers'
@@ -21,5 +22,11 @@ Feature: List all accounts of a user
       balance: '#number'
     }
     """
-
+  Scenario: Non existent user
+    Given path 'customers'
+    And path reandom_user_id
+    And path 'accounts'
+    When method GET
+    Then status 400
+    And match response == "Could not find customer #" + random_user_id
 
