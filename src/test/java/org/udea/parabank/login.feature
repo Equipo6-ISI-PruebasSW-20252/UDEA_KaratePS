@@ -27,3 +27,9 @@ Feature: Login to Parabank
        "ssn": '#string'
     }
     """
+
+# Validar que el header CF-RAY exista y no sea nulo (Criterio de aceptación #3)
+    And match responseHeaders contains key 'CF-RAY'
+    And match responseHeaders['CF-RAY'][0] != null
+
+    * print 'Login successful. CF-RAY header:', responseHeaders['CF-RAY'][0]
