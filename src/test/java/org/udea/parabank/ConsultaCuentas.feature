@@ -4,6 +4,7 @@ Feature: List all accounts of a user
   Background:
     * url baseUrl
     * header Accept = 'application/json'
+    * def fakerObj = new faker()
     * def user_id = '12212'
     * def random_user_id = fakerObj.number().randomNumber(5, true)
 
