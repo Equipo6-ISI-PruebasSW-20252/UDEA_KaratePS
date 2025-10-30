@@ -26,6 +26,7 @@ Feature: Payment failed due to insufficient funds
       }
       """
     When method post
+    * karate.log('Status recibido:', responseStatus)
     * assert responseStatus == 400 || responseStatus == 422
     And match response contains /(?i)insufficient|fondos|saldo/
     * karate.log('Status:', responseStatus, 'Body:', response)
