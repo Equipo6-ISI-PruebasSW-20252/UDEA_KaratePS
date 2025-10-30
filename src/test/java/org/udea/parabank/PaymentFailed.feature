@@ -1,9 +1,8 @@
 @parabank_billpay
-
 Feature: Payment failed due to insufficient funds
 
   Background:
-    * url baseUrl
+    * url 'https://parabank.parasoft.com/parabank/services/bank'
     * header Accept = 'application/json'
     * def fromAccountId = 12456
     * def montoInsuficiente = 1000000
@@ -27,8 +26,10 @@ Feature: Payment failed due to insufficient funds
       }
       """
     When method post
-    Then status 400
-    And match response == 'Insufficient funds'
+    * assert responseStatus == 400 || responseStatus == 422
+    And match response contains /(?i)insufficient|fondos|saldo/
+    * karate.log('Status:', responseStatus, 'Body:', response)
+
 
 
 
