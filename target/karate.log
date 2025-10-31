@@ -1,0 +1,572 @@
+13:22:21.283 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:22:21.309 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+13:22:22.424 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 236
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":"#montoInsuficiente","fromAccountId":"#fromAccountId"}
+
+13:22:23.217 [main] DEBUG com.intuit.karate - response time in milliseconds: 790
+1 < 500
+1 < Date: Thu, 30 Oct 2025 18:22:24 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996cf019d91867e1-MIA
+
+
+13:22:23.225 [main] INFO  com.intuit.karate - Status recibido: 500 
+13:22:23.229 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:30
+* assert responseStatus == 400 || responseStatus == 422
+did not evaluate to 'true': responseStatus == 400 || responseStatus == 422
+src/test/java/org/udea/parabank/PaymentFailed.feature:30
+13:22:23.819 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:27:58.125 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:27:58.129 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761856078128
+15:27:58.153 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:27:59.285 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 236
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":"#montoInsuficiente","fromAccountId":"#fromAccountId"}
+
+15:28:00.092 [main] DEBUG com.intuit.karate - response time in milliseconds: 805
+1 < 500
+1 < Date: Thu, 30 Oct 2025 20:28:01 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996da81e6f4eafd7-MIA
+
+
+15:28:00.099 [main] INFO  com.intuit.karate - Status recibido: 500 
+15:28:00.143 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:31
+And match response contains /(?i)insufficient|fondos|saldo/
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+src/test/java/org/udea/parabank/PaymentFailed.feature:31
+15:28:00.740 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:30:43.546 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:30:43.550 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761856243550
+15:30:43.573 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:30:44.738 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 236
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":"#montoInsuficiente","fromAccountId":"#fromAccountId"}
+
+15:30:45.444 [main] DEBUG com.intuit.karate - response time in milliseconds: 704
+1 < 500
+1 < Date: Thu, 30 Oct 2025 20:30:47 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996dac278bcf5c7d-MIA
+
+
+15:30:45.449 [main] INFO  com.intuit.karate - Status recibido: 500 
+15:30:45.458 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:30
+* assert responseStatus == 400 || responseStatus == 422
+did not evaluate to 'true': responseStatus == 400 || responseStatus == 422
+src/test/java/org/udea/parabank/PaymentFailed.feature:30
+15:30:46.071 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:36:47.396 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:36:47.402 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761856607401
+15:36:47.431 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:36:48.571 [main] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.0.182:8080/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 236
+1 > Host: 192.168.0.182:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":"#montoInsuficiente","fromAccountId":"#fromAccountId"}
+
+15:36:53.585 [main] ERROR com.intuit.karate - org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.0.182:8080 [/192.168.0.182] failed: Connect timed out, http call failed after 5218 milliseconds for url: http://192.168.0.182:8080/parabank/services/bank/billpay
+15:36:53.586 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:28
+When method post
+http call failed after 5218 milliseconds for url: http://192.168.0.182:8080/parabank/services/bank/billpay
+src/test/java/org/udea/parabank/PaymentFailed.feature:28
+15:36:54.177 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:41:46.568 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:41:46.572 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761856906571
+15:41:46.593 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:41:47.684 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 236
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":"#montoInsuficiente","fromAccountId":"#fromAccountId"}
+
+15:41:48.393 [main] DEBUG com.intuit.karate - response time in milliseconds: 705
+1 < 500
+1 < Date: Thu, 30 Oct 2025 20:41:48 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996dbc4b9bddb0ae-MIA
+
+
+15:41:48.403 [main] INFO  com.intuit.karate - Status recibido: 500 
+15:41:48.407 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:30
+* assert responseStatus == 400 || responseStatus == 422
+did not evaluate to 'true': responseStatus == 400 || responseStatus == 422
+src/test/java/org/udea/parabank/PaymentFailed.feature:30
+15:41:49.056 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:44:32.482 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:44:32.486 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761857072486
+15:44:32.506 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:44:33.657 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 236
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":"#montoInsuficiente","fromAccountId":"#fromAccountId"}
+
+15:44:34.300 [main] DEBUG com.intuit.karate - response time in milliseconds: 641
+1 < 500
+1 < Date: Thu, 30 Oct 2025 20:44:34 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996dc0587966db15-MIA
+
+
+15:44:34.306 [main] INFO  com.intuit.karate - Status recibido: 500 
+15:44:34.336 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:31
+And match response contains /(?i)insufficient|fondos|saldo/
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+src/test/java/org/udea/parabank/PaymentFailed.feature:31
+15:44:34.888 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:46:09.762 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:46:09.765 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761857169765
+15:46:09.786 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:46:10.905 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 236
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":"#montoInsuficiente","fromAccountId":"#fromAccountId"}
+
+15:46:11.641 [main] DEBUG com.intuit.karate - response time in milliseconds: 731
+1 < 500
+1 < Date: Thu, 30 Oct 2025 20:46:11 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996dc2b88ed90d84-MIA
+
+
+15:46:11.652 [main] INFO  com.intuit.karate - Status recibido: 500 
+15:46:11.656 [main] INFO  com.intuit.karate - [print] Respuesta recibida:  
+15:46:11.688 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:32
+And match response contains /(?i)insufficient|fondos|saldo/
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+src/test/java/org/udea/parabank/PaymentFailed.feature:32
+15:46:12.271 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:47:41.786 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:47:41.790 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761857261790
+15:47:41.814 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:47:42.957 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 236
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":"#montoInsuficiente","fromAccountId":"#fromAccountId"}
+
+15:47:43.636 [main] DEBUG com.intuit.karate - response time in milliseconds: 674
+1 < 500
+1 < Date: Thu, 30 Oct 2025 20:47:43 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996dc4f7cc43a53a-MIA
+
+
+15:47:43.645 [main] INFO  com.intuit.karate - Status recibido: 500 
+15:47:43.649 [main] INFO  com.intuit.karate - [print] Respuesta recibida:  
+15:47:43.684 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:33
+And match response contains /(?i)insufficient|fondos|saldo/
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+src/test/java/org/udea/parabank/PaymentFailed.feature:33
+15:47:44.281 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:50:03.991 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:50:03.995 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761857403995
+15:50:04.016 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:50:05.133 [main] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.0.182:8080/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 212
+1 > Host: 192.168.0.182:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":1000000,"fromAccountId":12456}
+
+15:50:10.152 [main] ERROR com.intuit.karate - org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.0.182:8080 [/192.168.0.182] failed: Connect timed out, http call failed after 5233 milliseconds for url: http://192.168.0.182:8080/parabank/services/bank/billpay
+15:50:10.153 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:28
+When method post
+http call failed after 5233 milliseconds for url: http://192.168.0.182:8080/parabank/services/bank/billpay
+src/test/java/org/udea/parabank/PaymentFailed.feature:28
+15:50:10.747 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:51:40.603 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:51:40.607 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761857500606
+15:51:40.627 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:51:41.759 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 212
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":1000000,"fromAccountId":12456}
+
+15:51:42.444 [main] DEBUG com.intuit.karate - response time in milliseconds: 684
+1 < 500
+1 < Date: Thu, 30 Oct 2025 20:51:42 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996dcacc4bf88da9-MIA
+
+
+15:51:42.446 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'responseStatus' with new value: karate.prevResponseStatus
+15:51:42.474 [main] INFO  com.intuit.karate - [print] Status recibido: null 
+15:51:42.478 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:32
+* assert responseStatus == 400 || responseStatus == 422 || responseStatus == 500
+did not evaluate to 'true': responseStatus == 400 || responseStatus == 422 || responseStatus == 500
+src/test/java/org/udea/parabank/PaymentFailed.feature:32
+15:51:43.068 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:53:17.323 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:53:17.327 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761857597326
+15:53:17.348 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:53:18.468 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 212
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":1000000,"fromAccountId":12456}
+
+15:53:19.193 [main] DEBUG com.intuit.karate - response time in milliseconds: 722
+1 < 500
+1 < Date: Thu, 30 Oct 2025 20:53:19 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996dcd28dd33334c-MIA
+
+
+15:53:19.197 [main] INFO  com.intuit.karate - [print] Status recibido: 500 
+15:53:19.206 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+15:53:19.211 [main] INFO  com.intuit.karate - [print] Respuesta recibida:  
+15:53:19.226 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:33
+* if (response && response != '') match response contains /(?i)insufficient|fondos|saldo/
+js failed:
+>>>>
+01: if (response && response != '') match response contains /(?i)insufficient|fondos|saldo/
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:38 Expected ; but found response
+if (response && response != '') match response contains /(?i)insufficient|fondos|saldo/
+                                      ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:394)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+- java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+src/test/java/org/udea/parabank/PaymentFailed.feature:33
+15:53:19.826 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:54:26.471 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:54:26.475 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761857666474
+15:54:26.495 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:54:27.661 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 212
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":1000000,"fromAccountId":12456}
+
+15:54:28.313 [main] DEBUG com.intuit.karate - response time in milliseconds: 648
+1 < 500
+1 < Date: Thu, 30 Oct 2025 20:54:28 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996dced8dda80c83-MIA
+
+
+15:54:28.319 [main] INFO  com.intuit.karate - [print] Status recibido: 500 
+15:54:28.323 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+15:54:28.327 [main] INFO  com.intuit.karate - [print] Respuesta recibida:  
+15:54:28.352 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:35
+* if (response && response != '') { match response contains /(?i)insufficient|fondos|saldo/ }
+js failed:
+>>>>
+01: if (response && response != '') { match response contains /(?i)insufficient|fondos|saldo/ }
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:40 Expected ; but found response
+if (response && response != '') { match response contains /(?i)insufficient|fondos|saldo/ }
+                                        ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:394)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+- java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+src/test/java/org/udea/parabank/PaymentFailed.feature:35
+15:54:28.964 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+15:55:46.018 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:55:46.022 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761857746022
+15:55:46.043 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+15:55:47.179 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 212
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":1000000,"fromAccountId":12456}
+
+15:55:47.854 [main] DEBUG com.intuit.karate - response time in milliseconds: 674
+1 < 500
+1 < Date: Thu, 30 Oct 2025 20:55:47 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996dd0ca1bd00314-MIA
+
+
+15:55:47.859 [main] INFO  com.intuit.karate - [print] Status recibido: 500 
+15:55:47.862 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+15:55:47.871 [main] INFO  com.intuit.karate - [print] Respuesta recibida:  
+15:55:47.885 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:36
+* if (response && response != '') { match response contains /(?i)insufficient|fondos|saldo/ }
+js failed:
+>>>>
+01: if (response && response != '') { match response contains /(?i)insufficient|fondos|saldo/ }
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:40 Expected ; but found response
+if (response && response != '') { match response contains /(?i)insufficient|fondos|saldo/ }
+                                        ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:394)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+- java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+src/test/java/org/udea/parabank/PaymentFailed.feature:36
+15:55:48.468 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+16:04:02.706 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:04:02.711 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761858242710
+16:04:02.732 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+16:04:03.848 [main] DEBUG com.intuit.karate - request:
+1 > POST http://192.168.0.182:8080/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 212
+1 > Host: 192.168.0.182:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":1000000,"fromAccountId":12456}
+
+16:04:08.869 [main] ERROR com.intuit.karate - org.apache.http.conn.ConnectTimeoutException: Connect to 192.168.0.182:8080 [/192.168.0.182] failed: Connect timed out, http call failed after 5236 milliseconds for url: http://192.168.0.182:8080/parabank/services/bank/billpay
+16:04:08.870 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:28
+When method post
+http call failed after 5236 milliseconds for url: http://192.168.0.182:8080/parabank/services/bank/billpay
+src/test/java/org/udea/parabank/PaymentFailed.feature:28
+16:04:09.480 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+16:05:16.578 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:05:16.582 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761858316582
+16:05:16.604 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+16:05:17.690 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 212
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":1000000,"fromAccountId":12456}
+
+16:05:18.408 [main] DEBUG com.intuit.karate - response time in milliseconds: 717
+1 < 500
+1 < Date: Thu, 30 Oct 2025 21:05:18 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996ddeb7eebeb883-MIA
+
+
+16:05:18.412 [main] INFO  com.intuit.karate - [print] Status recibido: 500 
+16:05:18.415 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+16:05:18.417 [main] INFO  com.intuit.karate - [print] Respuesta recibida:  
+16:05:18.444 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:36
+* if (response && response != '') {var result = karate.match(response, /(?i)insufficient|fondos|saldo/); if (!result.pass) karate.fail('No se encontró el texto esperado en la respuesta');}
+js failed:
+>>>>
+01: if (response && response != '') {var result = karate.match(response, /(?i)insufficient|fondos|saldo/); if (!result.pass) karate.fail('No se encontró el texto esperado en la respuesta');}
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:100 Quantifier without target
+if (response && response != '') {var result = karate.match(response, /(?i)insufficient|fondos|saldo/); if (!result.pass) karate.fail('No se encontró el texto esperado en la respuesta');}
+                                                                                                    ^
+Unnamed:1:185 Expected eof but found }
+if (response && response != '') {var result = karate.match(response, /(?i)insufficient|fondos|saldo/); if (!result.pass) karate.fail('No se encontró el texto esperado en la respuesta');}
+                                                                                                                                                                                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:394)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+- java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+src/test/java/org/udea/parabank/PaymentFailed.feature:36
+16:05:19.040 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+16:09:58.750 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:09:58.755 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761858598754
+16:09:58.781 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+16:09:59.920 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 212
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"333333333","accountNumber":"13344","amount":1000000,"fromAccountId":12456}
+
+16:10:00.527 [main] DEBUG com.intuit.karate - response time in milliseconds: 606
+1 < 500
+1 < Date: Thu, 30 Oct 2025 21:10:00 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996de59b1e53efa6-MIA
+
+
+16:10:00.532 [main] INFO  com.intuit.karate - [print] Status recibido: 500 
+16:10:00.536 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'response' with new value: response
+16:10:00.538 [main] INFO  com.intuit.karate - [print] Respuesta recibida:  
+16:10:01.130 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
+19:12:20.992 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:12:20.997 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1761869540996
+19:12:21.029 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10 - ^Payment failed due to insufficient funds$
+19:12:22.522 [main] DEBUG com.intuit.karate - request:
+1 > POST https://parabank.parasoft.com/parabank/services/bank/billpay?accountId=13122&amount=1000000
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 177
+1 > Host: parabank.parasoft.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Pago de prueba","address":{"street":"direccion de prueba","city":"Medellin","state":"Antioquia","zipCode":"5002"},"phoneNumber":"3333333333333","accountNumber":"13344"}
+
+19:12:23.314 [main] DEBUG com.intuit.karate - response time in milliseconds: 788
+1 < 200
+1 < Date: Fri, 31 Oct 2025 00:12:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < X-Content-Type-Options: nosniff
+1 < CF-RAY: 996ef0c02b329099-MIA
+{"payeeName":"Pago de prueba","amount":1000000,"accountId":13122}
+
+19:12:23.320 [main] INFO  com.intuit.karate - [print] Status recibido: 200 
+19:12:23.331 [main] INFO  com.intuit.karate - [print] Respuesta recibida: {
+  "payeeName": "Pago de prueba",
+  "amount": 1000000,
+  "accountId": 13122
+}
+ 
+19:12:23.336 [main] ERROR com.intuit.karate - src/test/java/org/udea/parabank/PaymentFailed.feature:32
+* assert responseStatus == 400 || responseStatus == 422
+did not evaluate to 'true': responseStatus == 400 || responseStatus == 422
+src/test/java/org/udea/parabank/PaymentFailed.feature:32
+19:12:24.051 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/org/udea/parabank/PaymentFailed.feature
