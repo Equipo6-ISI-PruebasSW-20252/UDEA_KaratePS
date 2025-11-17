@@ -19,7 +19,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.identify("dff706bb-7eab-48b0-9462-32e33eebbe38",{name:"josee"});
+    posthog.identify("134d4848-93fc-4b6f-8e6c-9f91e7122b7e",{name:"user"});
     posthog.capture("report_summary",{karate_version:"1.3.1",karate_meta:null});
   }
 });
@@ -37,18 +37,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">2</div>
     </div>
   </div>
   <div id="nav-env">
-    <div></div>
+    <div>prod</div>
   </div>
   <div id="nav-type">
     <div>Features</div>
   </div>
   <div id="nav-date">
-    <div>2025-10-30 07:12:24 p. m.</div>
+    <div>2025-11-16 08:50:06 p. m.</div>
   </div>
 </div>
 
@@ -70,15 +70,55 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
             </tr>
           </thead>
           <tbody>
+            <tr class="passed">
+              <td>
+                <a href="org.udea.parabank.ConsultaCuentas.html">org/udea/parabank/ConsultaCuentas.feature</a>
+              </td>
+              <td>List all accounts of a user</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">2477</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="org.udea.parabank.login.html">org/udea/parabank/login.feature</a>
+              </td>
+              <td>Login to Parabank</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1251</td>
+            </tr>
             <tr class="failed">
               <td>
-                <a href="src.test.java.org.udea.parabank.PaymentFailed.html">src/test/java/org/udea/parabank/PaymentFailed.feature</a>
+                <a href="org.udea.parabank.PaymentFailed.html">org/udea/parabank/PaymentFailed.feature</a>
               </td>
               <td>Payment failed due to insufficient funds</td>
               <td class="num">0</td>
               <td class="num">1</td>
               <td class="num">1</td>
-              <td class="num">1224</td>
+              <td class="num">1229</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="org.udea.parabank.SimulacionPrestamo.html">org/udea/parabank/SimulacionPrestamo.feature</a>
+              </td>
+              <td>Loan simulation in Parabank</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">1307</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="org.udea.parabank.TransferFunds.html">org/udea/parabank/TransferFunds.feature</a>
+              </td>
+              <td>Transfer funds in Parabank</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">850</td>
             </tr>
           </tbody>
         </table>

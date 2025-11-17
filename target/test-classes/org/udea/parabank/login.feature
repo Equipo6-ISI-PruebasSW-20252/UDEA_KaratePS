@@ -11,6 +11,7 @@ Feature: Login to Parabank
     And path 'demo' //password
     When method GET
     Then status 200
+    # Validar estructura de respuesta y autenticación exitosa
     And match response ==
     """
     {
@@ -27,8 +28,9 @@ Feature: Login to Parabank
        "ssn": '#string'
     }
     """
-
-# Validar que el header CF-RAY exista y no sea nulo (Criterio de aceptación #3)
-* def cfRay = responseHeaders['CF-RAY'][0]
+    # Validar que el ID del usuario existe (indica autenticación exitosa)
+    * assert response.id > 0
+    # Validar que el header CF-RAY exista y no sea nulo (validación adicional)
+    * def cfRay = responseHeaders['CF-RAY'][0]
     And match cfRay != null
-    * print 'Login successful. CF-RAY header:', cfRay
+    * print 'Login successful. User ID:', response.id, 'CF-RAY header:', cfRay
